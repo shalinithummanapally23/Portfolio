@@ -213,9 +213,9 @@ export const projectsData = [
         "4. Application data & confirmation receipts stored in MySQL",
       ],
     },
-    github: "https://github.com/manohar-akuthota/ai-job-application-bot",
-    demo: "https://ai-job-bot-preview.example.com",
-    previewUrl: "#ai-job-bot",
+    github: "https://github.com/shalinithummanapally23/ai-job-agent",
+    demo: "https://shalini-ai-job-frontend.onrender.com",
+    previewUrl: "https://shalini-ai-job-frontend.onrender.com",
   },
   {
     id: "driver-drowsiness",
@@ -251,9 +251,9 @@ export const projectsData = [
         "4. State machine triggers progressive audio alerts if EAR < 0.25 for 3 consecutive seconds",
       ],
     },
-    github: "https://github.com/manohar-akuthota/driver-drowsiness-detection",
-    demo: "https://drowsiness-detection-preview.example.com",
-    previewUrl: "#driver-drowsiness",
+    github: "https://github.com/shalinithummanapally23/Drowsiness_Detection",
+    demo: "https://github.com/shalinithummanapally23/Drowsiness_Detection",
+    previewUrl: "https://github.com/shalinithummanapally23/Drowsiness_Detection",
   },
   {
     id: "banking-application",
@@ -289,8 +289,8 @@ export const projectsData = [
       ],
     },
     github: "https://github.com/shalinithummanapally23/BankingApplication",
-    demo: "https://apex-trust-frontend.onrender.com/",
-    previewUrl: "#banking-application",
+    demo: "https://apex-trust-frontend-y5fe.onrender.com",
+    previewUrl: "https://apex-trust-frontend-y5fe.onrender.com",
   },
 ];
 

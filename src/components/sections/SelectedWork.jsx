@@ -365,8 +365,8 @@ const projects = [
     subtitle: 'Full-Stack Java / React 19 • Autonomous Agent Engine',
     badge: 'AUTONOMOUS AGENT ENGINE',
     image: '/assets/project_jobagent.jpg',
-    liveDomain: 'manohar-ai-job-frontend.onrender.com',
-    demoUrl: 'https://manohar-ai-job-frontend.onrender.com',
+    liveDomain: 'shalini-ai-job-frontend.onrender.com',
+    demoUrl: 'https://shalini-ai-job-frontend.onrender.com',
     githubUrl: 'https://github.com/shalinithummanapally23/ai-job-agent',
     leadQuote: 'An autonomous full-stack intelligence engine orchestrating private local LLMs with Playwright to achieve 99.4% ATS precision at zero token cost.',
     keyMetrics: [
@@ -431,8 +431,8 @@ const projects = [
     subtitle: 'Full-Stack Java / React 18 / Capacitor • Native Mobile & Web',
     badge: 'COMMERCE & STATUTORY FINTECH',
     image: '/assets/project_msmobiles.jpg',
-    liveDomain: 'ms-mobiles-frontend.onrender.com',
-    demoUrl: 'https://ms-mobiles-frontend.onrender.com/',
+    liveDomain: 'ms-mobiles-frontend-haf8.onrender.com',
+    demoUrl: 'https://ms-mobiles-frontend-haf8.onrender.com',
     githubUrl: 'https://github.com/shalinithummanapally23/Ecommerce',
     leadQuote: 'Enterprise smartphone retail ecosystem pairing modern capacitive mobile experiences with statutory Indian GST tax invoice computation.',
     keyMetrics: [
@@ -497,8 +497,8 @@ const projects = [
     subtitle: 'Full-Stack Java 21 / Angular 19 • Enterprise Core Banking & Ledger',
     badge: 'ENTERPRISE BANKING ENGINE',
     image: '/assets/project_banking.jpg',
-    liveDomain: 'apex-trust-frontend.onrender.com',
-    demoUrl: 'https://apex-trust-frontend.onrender.com/',
+    liveDomain: 'apex-trust-frontend-y5fe.onrender.com',
+    demoUrl: 'https://apex-trust-frontend-y5fe.onrender.com',
     githubUrl: 'https://github.com/shalinithummanapally23/BankingApplication',
     leadQuote: 'Mission-critical FinTech banking platform built with dual-entry ledger precision, BCrypt encryption, and 4-tier Role-Based Access Control.',
     keyMetrics: [
