@@ -300,7 +300,7 @@ const projects = [
     image: '/assets/project_smartvote.jpg',
     liveDomain: 'smartvote-ai-frontend.onrender.com',
     demoUrl: 'https://smartvote-ai-frontend.onrender.com',
-    githubUrl: 'https://github.com/ManoharAkuthota/SmartVote-AI',
+    githubUrl: 'https://github.com/shalinithummanapally23/SmartVote-AI',
     leadQuote: 'India’s sovereign national digital electoral portal engineered under ECI standards and Article 324, featuring ephemeral AI facial security, zero biometric retention, and tamper-evident SHA-256 ballot ledger sealing.',
     keyMetrics: [
       { val: '100%', label: 'ARTICLE 324 SECRECY', pct: 100 },
@@ -367,7 +367,7 @@ const projects = [
     image: '/assets/project_jobagent.jpg',
     liveDomain: 'manohar-ai-job-frontend.onrender.com',
     demoUrl: 'https://manohar-ai-job-frontend.onrender.com',
-    githubUrl: 'https://github.com/ManoharAkuthota/ai-job-agent',
+    githubUrl: 'https://github.com/shalinithummanapally23/ai-job-agent',
     leadQuote: 'An autonomous full-stack intelligence engine orchestrating private local LLMs with Playwright to achieve 99.4% ATS precision at zero token cost.',
     keyMetrics: [
       { val: '99.4%', label: 'ATS MATCH RATE', pct: 99 },
@@ -433,7 +433,7 @@ const projects = [
     image: '/assets/project_msmobiles.jpg',
     liveDomain: 'ms-mobiles-frontend.onrender.com',
     demoUrl: 'https://ms-mobiles-frontend.onrender.com/',
-    githubUrl: 'https://github.com/ManoharAkuthota/Ecommerce',
+    githubUrl: 'https://github.com/shalinithummanapally23/Ecommerce',
     leadQuote: 'Enterprise smartphone retail ecosystem pairing modern capacitive mobile experiences with statutory Indian GST tax invoice computation.',
     keyMetrics: [
       { val: 'HSN 8517', label: 'STATUTORY TAX CODE', pct: 100 },
@@ -499,7 +499,7 @@ const projects = [
     image: '/assets/project_banking.jpg',
     liveDomain: 'apex-trust-frontend.onrender.com',
     demoUrl: 'https://apex-trust-frontend.onrender.com/',
-    githubUrl: 'https://github.com/ManoharAkuthota/BankingApplication',
+    githubUrl: 'https://github.com/shalinithummanapally23/BankingApplication',
     leadQuote: 'Mission-critical FinTech banking platform built with dual-entry ledger precision, BCrypt encryption, and 4-tier Role-Based Access Control.',
     keyMetrics: [
       { val: '99.98%', label: 'API AVAILABILITY', pct: 99 },
@@ -563,8 +563,8 @@ const projects = [
     subtitle: 'Event-Driven Communications Platform (Keyanna Technologies)',
     badge: 'TELECOM & EVENT-DRIVEN CLUSTER',
     image: '/assets/project_cpaas.jpg',
-    demoUrl: 'https://github.com/ManoharAkuthota',
-    githubUrl: 'https://github.com/ManoharAkuthota',
+    demoUrl: 'https://github.com/shalinithummanapally23',
+    githubUrl: 'https://github.com/shalinithummanapally23',
     leadQuote: 'High-throughput Communications Platform as a Service backend streaming real-time SMS & WhatsApp events across Kafka clusters.',
     keyMetrics: [
       { val: '45.8K/s', label: 'KAFKA THROUGHPUT', pct: 96 },
@@ -627,8 +627,8 @@ const projects = [
     subtitle: 'Real-Time Computer Vision AI Safety Platform (Python / OpenCV)',
     badge: 'EDGE VISION & AI SAFETY',
     image: '/assets/project_drowsiness.jpg',
-    demoUrl: 'https://github.com/ManoharAkuthota/Drowsiness_Detection',
-    githubUrl: 'https://github.com/ManoharAkuthota/Drowsiness_Detection',
+    demoUrl: 'https://github.com/shalinithummanapally23/Drowsiness_Detection',
+    githubUrl: 'https://github.com/shalinithummanapally23/Drowsiness_Detection',
     leadQuote: 'Real-time edge computer vision safety system tracking 68 ocular facial landmarks to compute Eye Aspect Ratio and prevent micro-sleep.',
     keyMetrics: [
       { val: '68 Points', label: 'FACIAL LANDMARK MESH', pct: 100 },
@@ -780,7 +780,7 @@ export default function SelectedWork({ onHoverSound, onClickSound }) {
 
               <div className="flex flex-wrap items-center gap-3">
                 <a
-                  href="https://github.com/ManoharAkuthota"
+                  href="https://github.com/shalinithummanapally23"
                   target="_blank"
                   rel="noopener noreferrer"
                   onMouseEnter={onHoverSound}
