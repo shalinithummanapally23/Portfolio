@@ -2,8 +2,6 @@ services:
   - type: web
     name: shalini-thummanapally-portfolio
     runtime: static
-    plan: free
-    region: singapore
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     routes:
