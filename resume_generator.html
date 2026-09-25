@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thummanapally Shalini — Resume</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 10mm 13mm 10mm 13mm;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Inter', Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      font-size: 9.8pt;
+      line-height: 1.34;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+    }
+
+    .page-break {
+      page-break-before: always;
+      break-before: page;
+      padding-top: 2mm;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 4mm;
+    }
+
+    .name {
+      font-size: 20pt;
+      font-weight: 800;
+      color: #1e3a8a;
+      letter-spacing: 0.8px;
+      margin-bottom: 2mm;
+      text-transform: uppercase;
+    }
+
+    .contact-line {
+      font-size: 8.8pt;
+      color: #334155;
+      margin-bottom: 1mm;
+    }
+
+    .contact-line a {
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-line a:hover {
+      text-decoration: underline;
+    }
+
+    .sep {
+      color: #94a3b8;
+      margin: 0 4px;
+    }
+
+    /* Section */
+    .section {
+      margin-bottom: 3.5mm;
+    }
+
+    .section-title {
+      font-size: 10.2pt;
+      font-weight: 700;
+      color: #1e3a8a;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1.5px solid #1e3a8a;
+      padding-bottom: 1.2px;
+      margin-bottom: 2.2mm;
+    }
+
+    .summary-text {
+      font-size: 9.1pt;
+      color: #334155;
+      text-align: justify;
+      line-height: 1.35;
+    }
+
+    /* Two-column rows for experience & education */
+    .item-row {
+      display: flex;
+      margin-bottom: 2.8mm;
+    }
+
+    .item-date {
+      width: 135px;
+      flex-shrink: 0;
+      font-size: 8.8pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .item-content {
+      flex: 1;
+    }
+
+    .item-header {
+      font-size: 9.3pt;
+      margin-bottom: 1mm;
+    }
+
+    .item-role {
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .item-company {
+      font-style: italic;
+      color: #475569;
+    }
+
+    ul.bullets {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 1mm;
+    }
+
+    ul.bullets li {
+      position: relative;
+      padding-left: 13px;
+      margin-bottom: 1mm;
+      font-size: 8.8pt;
+      color: #334155;
+      line-height: 1.32;
+    }
+
+    ul.bullets li::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      color: #1e3a8a;
+      font-size: 10pt;
+      line-height: 1;
+    }
+
+    /* Education styling */
+    .edu-row {
+      display: flex;
+      margin-bottom: 2mm;
+    }
+
+    .edu-date {
+      width: 135px;
+      flex-shrink: 0;
+      font-size: 8.8pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .edu-content {
+      flex: 1;
+    }
+
+    .edu-degree {
+      font-size: 9.1pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .edu-school {
+      font-size: 8.7pt;
+      color: #475569;
+    }
+
+    .edu-score {
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    /* Projects styling (Page 2) */
+    .project-card {
+      margin-bottom: 2.8mm;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.8mm;
+    }
+
+    .project-title-group {
+      font-size: 9.4pt;
+    }
+
+    .project-name {
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .project-tagline {
+      color: #334155;
+      font-weight: 500;
+    }
+
+    .project-links {
+      font-size: 8.5pt;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .project-links a {
+      color: #1d4ed8;
+      text-decoration: none;
+      margin-left: 3px;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+
+    .project-stack {
+      font-size: 8.3pt;
+      color: #475569;
+      font-style: italic;
+      margin-bottom: 1.2mm;
+    }
+
+    .project-stack strong {
+      font-style: normal;
+      color: #334155;
+      font-weight: 600;
+    }
+
+    /* Skills table */
+    .skills-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2mm;
+      margin-bottom: 2.5mm;
+    }
+
+    .skill-row {
+      display: flex;
+      font-size: 8.6pt;
+    }
+
+    .skill-label {
+      width: 165px;
+      font-weight: 700;
+      color: #0f172a;
+      flex-shrink: 0;
+    }
+
+    .skill-values {
+      color: #334155;
+      flex: 1;
+    }
+
+    /* Achievements & Certifications */
+    .achievement-item {
+      position: relative;
+      padding-left: 13px;
+      margin-bottom: 1.2mm;
+      font-size: 8.6pt;
+      color: #334155;
+      line-height: 1.32;
+    }
+
+    .achievement-item::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      color: #1e3a8a;
+      font-size: 10pt;
+      line-height: 1;
+    }
+
+    .achievement-item strong {
+      color: #0f172a;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== PAGE 1 ==================== -->
+  <div class="page">
+    <div class="header">
+      <div class="name">Thummanapally Shalini</div>
+      <div class="contact-line">
+        Hyderabad, Telangana, India <span class="sep">|</span> +91 9391585557 <span class="sep">|</span> <a href="mailto:shalinithummanapally@gmail.com">shalinithummanapally@gmail.com</a>
+      </div>
+      <div class="contact-line">
+        Mahabubabad, 506101, Telangana <span class="sep">|</span> 
+        D/O: Thummanapally Eshwara Chary <span class="sep">|</span> 
+        <a href="mailto:shalinithummanapally@gmail.com">Contact Direct ↗</a>
+      </div>
+    </div>
+
+    <!-- Professional Summary -->
+    <div class="section">
+      <div class="section-title">Professional Summary</div>
+      <div class="summary-text">
+        Motivated Computer Science undergraduate (2026) with strong expertise in Java, Python, Data Structures, and Object Oriented Programming. Experienced in developing scalable applications across full-stack development, cybersecurity, and machine learning domains, with hands-on exposure to real-world problem solving. Adept at writing efficient algorithms, building RESTful solutions with Spring Boot and MySQL, and working with modern web technologies including React.js. Seeking to contribute as a Software Developer by delivering high-quality, performance-driven software solutions.
+      </div>
+    </div>
+
+    <!-- Work Experience / Internships -->
+    <div class="section">
+      <div class="section-title">Internship & Work Experience</div>
+
+      <div class="item-row">
+        <div class="item-date">Jan 2025 – May 2025</div>
+        <div class="item-content">
+          <div class="item-header">
+            <span class="item-role">Java Full Stack & Spring Boot Development Intern</span>, <span class="item-company">Talent Lad (AICTE)</span>
+          </div>
+          <ul class="bullets">
+            <li>Developed robust backend services and microservices using Java and the Spring Boot framework.</li>
+            <li>Built high-performance RESTful APIs for handling core application data, business workflows, and user authentication.</li>
+            <li>Integrated MySQL database with Spring Boot applications using Hibernate and JPA for reliable, efficient data management.</li>
+            <li>Collaborated with senior engineers to implement MVC architecture, validation schemas, and automated endpoint testing.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item-row">
+        <div class="item-date">Oct 2024 – Nov 2024</div>
+        <div class="item-content">
+          <div class="item-header">
+            <span class="item-role">Web Development Intern (Frontend)</span>, <span class="item-company">Codesoft Company</span>
+          </div>
+          <ul class="bullets">
+            <li>Developed modern, responsive frontend components for web applications ensuring seamless user experience and efficient data handling.</li>
+            <li>Collaborated actively with cross-functional team members to design structured, accessible interfaces for optimal data presentation.</li>
+            <li>Strengthened practical understanding of the software development lifecycle (SDLC), Git version control workflows, and cross-browser responsiveness.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <div class="section-title">Education</div>
+
+      <div class="edu-row">
+        <div class="edu-date">2022 – 2026</div>
+        <div class="edu-content">
+          <div class="edu-degree">Bachelor of Technology – Computer Science and Engineering</div>
+          <div class="edu-school">Bharath Institute of Higher Education And Research University, Chennai, Tamil Nadu — <span class="edu-score">Score: 91.4%</span></div>
+        </div>
+      </div>
+
+      <div class="edu-row">
+        <div class="edu-date">2020 – 2022</div>
+        <div class="edu-content">
+          <div class="edu-degree">MPC Board of Intermediate Education (Class XII)</div>
+          <div class="edu-school">Sri Vidwan Junior College, Warangal, Telangana — <span class="edu-score">Score: 94.9%</span></div>
+        </div>
+      </div>
+
+      <div class="edu-row">
+        <div class="edu-date">2019 – 2020</div>
+        <div class="edu-content">
+          <div class="edu-degree">Secondary School Certificate (Class X) — Telangana Board</div>
+          <div class="edu-school">T.S MODEL SCHOOL, Mahabubabad, Telangana — <span class="edu-score">Score: 95.0%</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="section">
+      <div class="section-title">Professional Certifications</div>
+      <div class="achievement-item">
+        <strong>NPTEL Certificate – Big Data Analytics:</strong> National programme on technology enhanced learning certification in big data and distributed data workflows.
+      </div>
+      <div class="achievement-item">
+        <strong>Samsung Innovation Certificate (NSIC / Coding & Programming):</strong> Advanced coding and software engineering algorithms certification.
+      </div>
+      <div class="achievement-item">
+        <strong>Full Stack Java Development Certificate:</strong> Comprehensive enterprise Java & Spring Boot mastery from Talent Lad.
+      </div>
+      <div class="achievement-item">
+        <strong>Machine Learning Using Python — Coursera:</strong> Supervised learning, neural modeling, and algorithmic regression analysis.
+      </div>
+      <div class="achievement-item">
+        <strong>Data Structures and Algorithms — Coursera:</strong> Rigorous mastery of algorithm design, computational complexity, and dynamic programming.
+      </div>
+      <div class="achievement-item">
+        <strong>Google AI/ML Certificate — EduSkills:</strong> Practical machine learning pipelines and artificial intelligence foundations.
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 2 ==================== -->
+  <div class="page page-break">
+    <!-- Featured Projects (ALL 4 PROJECTS with Live Demo & GitHub links) -->
+    <div class="section">
+      <div class="section-title">Featured Technical & Full-Stack Projects</div>
+
+      <!-- Project 1: SmartVote Bharat (E-Voting) -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-title-group">
+            <span class="project-name">SmartVote Bharat (SmartVote-AI)</span> — <span class="project-tagline">Sovereign Digital E-Voting System</span>
+          </div>
+          <div class="project-links">
+            [<a href="https://smartvote-ai-frontend.onrender.com" target="_blank">Live Demo ↗</a> <span class="sep">|</span> <a href="https://github.com/ManoharAkuthota/SmartVote-AI" target="_blank">GitHub ↗</a>]
+          </div>
+        </div>
+        <div class="project-stack">
+          <strong>Tech Stack:</strong> Spring Boot 3.3, React 18, Vite, AI Facial Security, SHA-256 Cryptographic Sealer, MySQL, Tailwind CSS
+        </div>
+        <ul class="bullets">
+          <li>Architected a sovereign digital electoral voting platform complying with Article 324 of the Constitution of India, guaranteeing 100% secret balloting and immutable SHA-256 cryptographic ballot sealing.</li>
+          <li>Implemented AI real-time facial verification & liveness detection in the polling chamber, preventing biometric spoofing and ensuring zero duplicate votes.</li>
+          <li>Engineered dual-layer Election Commission & Returning Officer audit consoles, verifiable digital voter slips, and a public cryptographic receipt verification engine.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2: APEX TRUST Banking -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-title-group">
+            <span class="project-name">Banking Management System (APEX TRUST)</span> — <span class="project-tagline">Enterprise Core Banking Platform</span>
+          </div>
+          <div class="project-links">
+            [<a href="https://apex-trust-frontend.onrender.com/" target="_blank">Live Demo ↗</a> <span class="sep">|</span> <a href="https://github.com/ManoharAkuthota/BankingApplication" target="_blank">GitHub ↗</a>]
+          </div>
+        </div>
+        <div class="project-stack">
+          <strong>Tech Stack:</strong> Spring Boot 3 (Java 21), Angular 19, TiDB Serverless / MySQL, JWT, Liquibase, Docker, Render
+        </div>
+        <ul class="bullets">
+          <li>Architected an enterprise core banking platform using Spring Boot 3 and Angular 19 with TiDB Serverless (distributed MySQL) and automated Liquibase schema migrations.</li>
+          <li>Engineered 4-tier Role-Based Access Control (Admin, Branch Manager, Teller, Customer) secured by stateless JWT authentication, BCrypt encryption, and audit trail logging.</li>
+          <li>Built real-time transaction and ledger engine handling branch-level customer onboarding, account creation approval workflows, inter-account fund transfers, and ACID ledger consistency.</li>
+        </ul>
+      </div>
+
+      <!-- Project 3: MS Mobiles E-Commerce -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-title-group">
+            <span class="project-name">MS Mobiles</span> — <span class="project-tagline">Omnichannel E-Commerce Platform — Web & Native Android Application</span>
+          </div>
+          <div class="project-links">
+            [<a href="https://ms-mobiles-frontend.onrender.com/" target="_blank">Live Demo ↗</a> <span class="sep">|</span> <a href="https://github.com/ManoharAkuthota/Ecommerce" target="_blank">GitHub ↗</a>]
+          </div>
+        </div>
+        <div class="project-stack">
+          <strong>Tech Stack:</strong> Spring Boot 3, React 18, TiDB Cloud (AWS MySQL), Spring Security 6, JWT, Capacitor 8, jsPDF, Cloudinary CDN
+        </div>
+        <ul class="bullets">
+          <li>Architected an enterprise-grade e-commerce ecosystem using Spring Boot 3, React 18, and TiDB Cloud with stateless JWT / Spring Security 6 role-based authentication and dynamic smartphone catalog management.</li>
+          <li>Engineered an official PDF GST Tax Invoice generator adhering to statutory tax rules (HSN 8517, CGST/SGST/IGST breakdown) with Indian Rupee number-to-words conversion.</li>
+          <li>Built real-time stock alert engine dispatching notifications on administrative inventory restocks; packaged storefront into a native Android App via Capacitor 8 with offline PWA support.</li>
+        </ul>
+      </div>
+
+      <!-- Project 4: AI Job Application Bot -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-title-group">
+            <span class="project-name">AI Job Application Bot & ATS Platform</span> — <span class="project-tagline">Autonomous AI Automation System</span>
+          </div>
+          <div class="project-links">
+            [<a href="https://manohar-ai-job-frontend.onrender.com" target="_blank">Live Demo ↗</a> <span class="sep">|</span> <a href="https://github.com/ManoharAkuthota/ai-job-agent" target="_blank">GitHub ↗</a>]
+          </div>
+        </div>
+        <div class="project-stack">
+          <strong>Tech Stack:</strong> Spring Boot 3, React 19, MySQL, Local Ollama (Llama 3), Google Gemini, Playwright, Render
+        </div>
+        <ul class="bullets">
+          <li>Built an end-to-end autonomous job automation engine using Spring Boot 3, React 19, and MySQL, processing candidate resumes with ATS semantic matching and instant PDF compilation.</li>
+          <li>Integrated multi-model AI workflows (Local Ollama Llama 3 & Google Gemini) to generate personalized cover letters, tailored resumes, and 3-tier interview prep kits without token costs.</li>
+          <li>Orchestrated automated job applications using headless Playwright with screenshot proof verification, cron scheduling, and email confirmation dispatching.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="section">
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-grid">
+        <div class="skill-row">
+          <span class="skill-label">Programming Languages</span>
+          <span class="skill-values">Java, Python, C, JavaScript, SQL, DSA (Data Structures & Algorithms)</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Backend Development</span>
+          <span class="skill-values">Java, Spring Boot, REST APIs, OOP Principles, Hibernate, Microservices, Spring Security, JWT</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Web Technologies</span>
+          <span class="skill-values">HTML, CSS, Bootstrap, React.js, Node.js, Tailwind CSS</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Database Management</span>
+          <span class="skill-values">MySQL, Relational Schema Design, Query Optimization</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Tools & Platforms</span>
+          <span class="skill-values">Git, GitHub, VS Code, IntelliJ, Postman, Docker, Render</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Core Strengths</span>
+          <span class="skill-values">Strong Problem Solving & Analytical Thinking, Good Understanding of OOP & Backend Logic, Effective Team Collaboration & Communication, Quick Learner with High Adaptability</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Declaration -->
+    <div class="section" style="margin-bottom: 0;">
+      <div class="section-title">Declaration</div>
+      <div class="summary-text" style="margin-bottom: 1.5mm;">
+        I hereby declare that the information provided in this resume is true and correct to the best of my knowledge and belief.
+      </div>
+      <div style="font-weight: 700; color: #0f172a; font-size: 9.2pt;">
+        (THUMMANAPALLY SHALINI)
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
