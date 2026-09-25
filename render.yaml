@@ -1,6 +1,6 @@
-﻿services:
+services:
   - type: web
-    name: manohar-akuthota-portfolio
+    name: shalini-thummanapally-portfolio
     runtime: static
     plan: free
     region: singapore
